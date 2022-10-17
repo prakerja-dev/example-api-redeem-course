@@ -8,7 +8,7 @@ require 'json'
 client_code = ''
 redeem_code = ''
 key = ''
-endpoint = '/api/v1/integration/payment/redeem-code/status'
+endpoint = '/api/v1/integration/payment/redeem-code/commit'
 timestamp = String(Time.now.to_i)
 text = client_code + timestamp + 'POST' + endpoint + '{"redeem_code":"' + redeem_code + '"}'
 signature = OpenSSL::HMAC.hexdigest(OpenSSL::Digest::Digest.new('sha1'), key.encode("ASCII"), text.encode("ASCII"))

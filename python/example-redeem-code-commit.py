@@ -7,7 +7,7 @@ import json
 client_code = ''
 redeem_code = ''
 key = ''
-endpoint = '/api/v1/integration/payment/redeem-code/status'
+endpoint = '/api/v1/integration/payment/redeem-code/commit'
 timestamp = str(int(time.time()))
 text = client_code + timestamp + 'POST' + \
     endpoint + '{"redeem_code":"' + redeem_code + '"}'

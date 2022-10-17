@@ -21,7 +21,7 @@ func main() {
 
 	sign_repo := signature_go.NewPlatformSignature(client_code, key)
 	sign_timestamp := time.Unix(timestamp, 0)
-	signature, err := sign_repo.GenerateForRedeemStatus(context.TODO(), sign_timestamp, redeem_code)
+	signature, err := sign_repo.GenerateForRedeemCommit(context.TODO(), sign_timestamp, redeem_code)
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -29,7 +29,7 @@ func main() {
 	fmt.Printf("timestamp: %s\n", strconv.Itoa(int(timestamp)))
 	fmt.Println("signature: " + signature)
 
-	url := "https://api-ssn.prakerja.go.id/api/v1/integration/payment/redeem-code/status"
+	url := "https://api-ssn.prakerja.go.id/api/v1/integration/payment/redeem-code/commit"
 
 	var data = []byte(fmt.Sprintf(`{"redeem_code":"%s"}`, redeem_code))
 	req, err := http.NewRequest("POST", url, bytes.NewBuffer(data))

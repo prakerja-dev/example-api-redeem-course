@@ -11,7 +11,7 @@ import java.util.Formatter;
 import javax.crypto.Mac;
 import javax.crypto.spec.SecretKeySpec;
 
-public class Example {
+public class ExampleRedeemCodeCommit {
   private static final String HMAC_SHA1_ALGORITHM = "HmacSHA1";
 
   private static String toHexString(byte[] bytes) {
@@ -36,7 +36,7 @@ public class Example {
     String client_code = "";
     String redeem_code = "";
     String key = "";
-    String endpoint = "/api/v1/integration/payment/redeem-code/status";
+    String endpoint = "/api/v1/integration/payment/redeem-code/commit";
     String timestamp = String.valueOf(System.currentTimeMillis() / 1000L);
     String text = client_code + timestamp + "POST" + endpoint + "{\"redeem_code\":\"" + redeem_code + "\"}";
     String signature = calculateRFC2104HMAC(text, key);

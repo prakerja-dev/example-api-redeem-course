@@ -2,7 +2,7 @@
 $client_code = '';
 $redeem_code = '';
 $key = '';
-$endpoint = '/api/v1/integration/payment/redeem-code/status';
+$endpoint = '/api/v1/integration/payment/redeem-code/commit';
 $timestamp = time();
 $text = $client_code . $timestamp . 'POST' . $endpoint . '{"redeem_code":"' . $redeem_code . '"}';
 $signature = hash_hmac('sha1', $text, $key);
