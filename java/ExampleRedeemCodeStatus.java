@@ -11,7 +11,7 @@ import java.util.Formatter;
 import javax.crypto.Mac;
 import javax.crypto.spec.SecretKeySpec;
 
-public class Example {
+public class ExampleRedeemCodeStatus {
   private static final String HMAC_SHA1_ALGORITHM = "HmacSHA1";
 
   private static String toHexString(byte[] bytes) {
