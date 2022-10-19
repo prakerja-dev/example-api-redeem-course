@@ -9,9 +9,9 @@ using System.Net.Http.Headers;
 
 DateTime now = DateTime.Now;
 
-string client_code = "client-prakerja-testing-bogor";
-string redeem_code = "bc8b8ad2-4deb-11ed-a0e6-08c0eb6630ae";
-string key = "mi0xgz7gc8enolmyfc4vv0luo6sr6j4x";
+string client_code = "";
+string redeem_code = "";
+string key = "";
 string endpoint = "/api/v1/integration/payment/redeem-code/status";
 long timestamp = ((DateTimeOffset)now).ToUnixTimeSeconds();
 string text = client_code + timestamp + "POST" + endpoint + "{\"redeem_code\":\"" + redeem_code + "\"}";
