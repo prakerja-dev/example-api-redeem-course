@@ -15,7 +15,7 @@ Source code pada repo ini dijalankan menggunakan CLI, hanya sebatas memberikan c
 
 ## Step
 
-Pilih bahasa yang Anda gunakan pada folder yang telah disediakan, masing-masing folder contoh bahasa pemrograman, telah disediakan dua file, yaitu example-redeem-code-status.<EXT> untuk pengecekan Redeem Code apakah sudah pernah digunakan atau belum, dan example-redeem-code-commit.<EXT> untuk mendeklarasi Redeem Code untuk digunakan. Pada dasarnya kedua nya sama, hanya saja berbeda pada URL endpoint nya, yang sesuai dengan penggunaan yang dibutuhkan.
+Pilih bahasa yang Anda gunakan pada folder yang telah disediakan, masing-masing folder contoh bahasa pemrograman, telah disediakan dua file, yaitu example-redeem-code-status.EXT untuk pengecekan Redeem Code apakah sudah pernah digunakan atau belum, dan example-redeem-code-commit.EXT untuk mendeklarasi Redeem Code untuk digunakan. Pada dasarnya kedua nya sama, hanya saja berbeda pada URL endpoint nya, yang sesuai dengan penggunaan yang dibutuhkan.
 
 Yang perlu dilakukan sebelum menjalankan code examples ini adalah, merubah nilai variable berikut ini pada dua file yang disebutkan sebelumnya:
 
